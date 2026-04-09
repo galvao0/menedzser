@@ -4,6 +4,7 @@ import saqueIcon from '../assets/saque.png'
 import depositoIcon from '../assets/deposit.png'
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useEffect, useState } from "react";
+import { navigate } from '../Navigation'
 
 export default function CardBanca ({ casa }) {
 
@@ -47,11 +48,11 @@ export default function CardBanca ({ casa }) {
                 </View>
             </View>
             <View style={styles.opTransfCont}>
-                <TouchableOpacity style={styles.opTransf}>
+                <TouchableOpacity style={styles.opTransf} onPress={() => navigate('Transferencia', { op: 'deposito' })}>
                     <Image source={depositoIcon} style={styles.icon} />
                     <Text style={styles.txtBtn}>Depósito</Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.opTransf}>
+                <TouchableOpacity style={styles.opTransf} onPress={() => navigate('Transferencia', { op: 'saque' })}>
                     <Image source={saqueIcon} style={styles.icon} />
                     <Text style={styles.txtBtn}>Saque</Text>
                 </TouchableOpacity>
