@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "menedzser",
+    "slug": "app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/alligator-black.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff",
+        "usesCleartextTraffic": true
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.galva0.menedzser"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f65b6dd1-5138-49fa-8420-6cdb65f2aa78"
+      }
+    }
+  }
+}
